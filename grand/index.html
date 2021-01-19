@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>resturant landing page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      .container-fluid {
+        background-image: url(./bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+      }
+      .navbar a,
+      ul li a {
+        color: #fff !important;
+        font-size: 18px;
+        font-family: sans-serif;
+      }
+      .title {
+        font-family: "Poppins";
+        font-weight: bold;
+        font-size: 5vw;
+      }
+      .line {
+        height: 1px;
+        color: gray;
+        background-color: gray;
+        text-align: left;
+        margin-left: 0;
+        width: 340px;
+      }
+      .detail {
+        font-size: 13px;
+        font-family: sans-serif;
+        color: #efefef;
+      }
+      .btn__style {
+        font-size: 10px;
+        font-weight: bold;
+        border-radius: 50px;
+        color: #1e1711;
+      }
+      .body__content {
+        padding: 150px 0;
+      }
+      .navbar {
+        padding: 0;
+      }
+      .navbar-nav {
+        padding-top: 45px;
+      }
+      .navbar-brand {
+        padding: 0;
+      }
+      .logo img {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container text-light">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand logo" href="#">
+            <img src="./logo.png" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Address</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="body__content">
+          <div class="title">Grand Opening</div>
+          <hr class="line" />
+          <p class="w-50 detail">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit Vestibuet
+            lorem odio luctus egestas sit amet eu libero Fusce aliquet ide sit
+            viverratesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas
+          </p>
+          <button class="px-3 btn__style">Read More</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
