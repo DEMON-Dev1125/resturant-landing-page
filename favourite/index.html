@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>resturant landing page</title>
 
@@ -71,12 +72,8 @@
       .body__content {
         padding: 100px 0;
       }
-      .navbar {
-        padding-top: 40px;
-      }
       .logo img {
         width: 100px;
-        height: 40px;
       }
       .text__color {
         color: #e4e4e4;
@@ -98,6 +95,12 @@
         .detail {
           width: 100%;
         }
+        .logo__icon {
+          display: none;
+        }
+        .logo img {
+          width: 50px;
+        }
       }
       @media screen and (min-width: 769px) {
         .icons {
@@ -109,6 +112,9 @@
         .detail {
           width: 100%;
         }
+        .logo__mobile {
+          display: none;
+        }
       }
       @media screen and (max-width: 500px) {
         .body__content {
@@ -116,16 +122,23 @@
           bottom: 10px;
           padding: 0;
         }
+        .logo__icon {
+          display: none;
+        }
         .detail {
           width: 100%;
+        }
+        .logo img {
+          width: 50px;
         }
       }
     </style>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
       <a class="navbar-brand logo" href="#">
-        <img src="./logo.png" alt="logo" />
+        <img class="logo__icon" src="./logo.png" alt="logo" />
+        <img class="logo__mobile" src="./mobile_logo.png" alt="logo" />
       </a>
       <button
         class="navbar-toggler"
@@ -150,9 +163,9 @@
             <a class="nav-link" href="#section4">CONTACT</a>
           </li>
           <li class="nav-item icons">
-            <a href=""><i class="fab fa-twitter-square"></i></a>
-            <a href=""><i class="fab fa-facebook"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
+            <a href=""><i class="glyphicon air-icon-social-twitter"></i></a>
+            <a href=""><i class="glyphicon air-icon-social-facebook"></i></a>
+            <a href=""><i class="glyphicon air-icon-social-instagram"></i></a>
           </li>
         </ul>
       </div>

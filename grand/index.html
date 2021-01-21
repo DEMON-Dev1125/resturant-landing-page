@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>resturant landing page</title>
 
@@ -32,6 +33,12 @@
         color: #fff !important;
         font-size: 18px;
         font-family: sans-serif;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      .nav-link {
+        letter-spacing: 3px;
+        margin-left: 30px;
       }
       .title {
         font-family: "Poppins";
@@ -65,18 +72,14 @@
       .body__content {
         padding: 150px 0;
       }
-      .navbar {
-        padding: 0;
-      }
       .navbar-nav {
-        padding-top: 45px;
+        padding: 15px 0;
       }
       .navbar-brand {
         padding: 0;
       }
       .logo img {
         width: 100px;
-        height: 100px;
       }
 
       @media screen and (max-width: 769px) {
@@ -88,6 +91,18 @@
         .detail {
           width: 100%;
         }
+        .logo__icon {
+          display: none;
+        }
+        .logo img {
+          width: 50px;
+        }
+      }
+
+      @media screen and (min-width: 769px) {
+        .logo__mobile {
+          display: none;
+        }
       }
 
       @media screen and (max-width: 500px) {
@@ -96,16 +111,23 @@
           bottom: 10px;
           padding: 0;
         }
+        .logo__icon {
+          display: none;
+        }
         .detail {
           width: 100%;
+        }
+        .logo img {
+          width: 50px;
         }
       }
     </style>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <a class="navbar-brand logo" href="#">
-        <img src="./logo.png" alt="logo" />
+        <img class="logo__icon" src="./logo.png" alt="logo" />
+        <img class="logo__mobile" src="./mobile_logo.png" alt="logo" />
       </a>
       <button
         class="navbar-toggler"
