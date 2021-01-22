@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>platery</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      .container-fluid {
+        position: relative;
+      }
+      #section1 {
+        background-image: url(./bg_3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+      }
+      #section2 {
+        background-image: url(./bg_3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+      }
+      #section3 {
+        background-image: url(./bg_3.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+      }
+      .navbar a,
+      ul li a {
+        color: #fff !important;
+        font-size: 17px;
+        font-weight: bold;
+        font-family: sans-serif;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      .title {
+        font-family: "Rubik";
+        font-weight: bold;
+        font-size: 5vw;
+      }
+      .detail {
+        font-size: 18px;
+        font-family: "Poppins";
+        color: #efefef;
+        width: 50%;
+      }
+      .btn__style {
+        font-weight: bold;
+        letter-spacing: 1px;
+        background-color: #dcab73;
+        border-radius: 50px;
+        color: #0b0701;
+        width: 165px;
+        height: 45px;
+        border: none;
+        outline-style: none;
+        font-size: 20px;
+      }
+      .btn__style:focus {
+        outline-style: none;
+      }
+      .body__content {
+        padding: 100px 0;
+      }
+      .logo img {
+        width: 200px;
+      }
+      .text__color {
+        color: #dcddd8;
+      }
+      .nav-link {
+        letter-spacing: 1px;
+        margin-left: 10px;
+      }
+      @media screen and (min-width: 992px) {
+        ul li a:hover {
+          background-color: #dead74;
+          border-radius: 10px;
+        }
+        ul li a:focus {
+          background-color: #dead74;
+          color: black !important;
+          border-radius: 10px;
+          outline-style: none;
+        }
+      }
+      /* @media screen and (max-width: 992px) {
+        .body__content {
+          position: absolute;
+          bottom: 10px;
+        }
+      } */
+      @media screen and (max-width: 769px) {
+        .icons {
+          margin-left: 30px;
+          padding-top: 10px;
+        }
+        /* .body__content {
+          position: absolute;
+          bottom: 10px;
+          padding: 0;
+        } */
+        .detail {
+          width: 100%;
+        }
+        .logo__icon {
+          display: none;
+        }
+        .logo img {
+          width: 50px;
+        }
+      }
+      @media screen and (min-width: 769px) {
+        .icons {
+          position: absolute;
+          right: 0;
+          margin-left: 30px;
+          padding-top: 10px;
+        }
+        .detail {
+          width: 56%;
+        }
+        .detail2 {
+          width: 79%;
+          margin: 0 0 0 85px;
+        }
+        .logo__mobile {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        /* .body__content {
+          position: absolute;
+          bottom: 10px;
+          padding: 0;
+        } */
+        .logo__icon {
+          display: none;
+        }
+        .detail {
+          width: 100%;
+        }
+        .logo img {
+          width: 50px;
+        }
+      }
+      .navbar-toggler {
+        width: 50px;
+        height: 35px;
+        background-color: #2a3031;
+      }
+      .navbar-toggler .line {
+        width: 100%;
+        height: 2px;
+        float: left;
+        background-color: #eee9e4;
+        margin-bottom: 5px;
+      }
+
+      .fa {
+        padding: 8px;
+        font-size: 15px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+      }
+      .fa:hover {
+        opacity: 0.7;
+      }
+      .fa-facebook {
+        background: #dfae75;
+        color: #171513;
+      }
+
+      .fa-twitter {
+        background: #dfae75;
+        color: #171513;
+      }
+      .fa-instagram {
+        background: #dfae75;
+        color: #171513;
+      }
+      .site__name {
+        text-decoration: none;
+        color: #e2e1dd;
+      }
+      .site__name:hover {
+        text-decoration: none;
+        color: #e2e1dd;
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-expand-lg fixed-top mt-md-4 mx-md-5">
+      <a class="navbar-brand logo" href="#">
+        <img class="logo__icon" src="./logo.png" alt="logo" />
+        <img class="logo__mobile" src="./mobile_logo.png" alt="logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse toggle justify-content-end"
+        id="collapsibleNavbar"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">UPCOMMING TREKS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section4">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- <div class="container-fluid"> -->
+    <div id="section1" class="body__content text__color">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-7 col-md-7">
+            <div class="title">THE BEST RESTAURANT</div>
+            <p class="detail">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+            <button class="px-3 btn__style">BOOK NOW!</button>
+            <div class="social-icons mt-4">
+              <a href=""><i class="fa fa-instagram"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-twitter"></i></a>
+            </div>
+          </div>
+          <div class="col-5 col-md-5">
+            <img src="./chef_1.png" width="100%" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section2" class="body__content text__color">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-5 col-md-5">
+            <img src="./chef_2.png" width="100%" alt="" />
+          </div>
+          <div class="col-1 col-lg-2"></div>
+          <div class="col-6 col-lg-5 text-right">
+            <div class="title">SOFT OPENING</div>
+            <p class="detail2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+            <div class="social-icons mt-4">
+              <a href=""><i class="fa fa-instagram"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section3" class="body__content text__color">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-7 col-md-7">
+            <div class="title">WESTERN RESTAURANT</div>
+            <p class="detail">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+            <div class="social-icons mt-4">
+              <a href=""><i class="fa fa-instagram"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-twitter"></i></a>
+            </div>
+            <p class="mt-2">
+              <a class="site__name" href="">www.yoursite.com</a>
+            </p>
+          </div>
+          <div class="col-5 col-lg-5">
+            <img src="./chef_3.png" width="100%" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section4"></div>
+    <!-- </div> -->
+  </body>
+  <script>
+    $(document).ready(function () {
+      $(".nav-item").click(function () {
+        $(".toggle").addClass("collapsed");
+        $(".toggle").removeClass("show");
+        $(".navbar-toggler").addClass("collapsed");
+      });
+    });
+  </script>
+</html>
