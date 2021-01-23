@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <title>Food Delivery</title>
@@ -19,8 +19,352 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-</head>
-<body>
-    
-</body>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .container-fluid {
+        position: relative;
+        background-image: url(./img/bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+      }
+      .navbar a,
+      ul li a {
+        color: #425060 !important;
+        font-size: 17px;
+        font-weight: bold;
+        font-family: sans-serif;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      .title {
+        font-family: "Rubik";
+        font-weight: bold;
+        font-size: 5vw;
+        font-family: sans-serif;
+      }
+      .title__one {
+        margin: 0;
+      }
+      .title__two {
+        margin: 0;
+        background-color: #fff69c;
+        border: 1px solid #fff69c;
+        border-radius: 10px;
+        padding: 0 10px 10px 10px;
+      }
+      .detail {
+        font-size: 18px;
+        font-family: "Poppins";
+        /* color: #efefef; */
+        width: 50%;
+      }
+      .detail__one {
+        color: #454544;
+      }
+      .detail__two {
+        color: #8c8c8c;
+      }
+      .btn__style {
+        font-weight: bold;
+        background-color: #ffd24e;
+        border-radius: 10px;
+        color: #425060;
+        width: 165px;
+        height: 45px;
+        border: none;
+        outline-style: none;
+        font-size: 20px;
+        margin-left: 20%;
+        padding-bottom: 8px;
+      }
+      .btn__style:focus {
+        outline-style: none;
+      }
+      .body__content {
+        padding-top: 150px;
+      }
+      .logo img {
+        width: 200px;
+      }
+      .text__color {
+        color: #425060;
+      }
+      .nav-link {
+        letter-spacing: 1px;
+        margin-left: 10px;
+      }
+      .social__icons a {
+        text-decoration: none;
+        color: #425060;
+      }
+      .social__icons a:hover {
+        text-decoration: none;
+        color: #425060;
+      }
+      .social__in {
+        margin: 0 12%;
+      }
+      @media screen and (min-width: 992px) {
+        ul li a:hover {
+          background-color: #ffd24e;
+          border-radius: 10px;
+        }
+        ul li a:focus {
+          background-color: #ffd24e;
+          color: black !important;
+          border-radius: 10px;
+          outline-style: none;
+        }
+        .detail {
+          width: 75%;
+        }
+      }
+      /* @media screen and (max-width: 992px) {
+        .body__content {
+          position: absolute;
+          bottom: 10px;
+        }
+      } */
+      @media screen and (max-width: 769px) {
+        .icons {
+          margin-left: 30px;
+          padding-top: 10px;
+        }
+        /* .body__content {
+          position: absolute;
+          bottom: 10px;
+          padding: 0;
+        } */
+        .detail {
+          width: 100%;
+        }
+        .logo__icon {
+          display: none;
+        }
+        .logo img {
+          width: 50px;
+        }
+      }
+      @media screen and (min-width: 769px) {
+        .icons {
+          position: absolute;
+          right: 0;
+          margin-left: 30px;
+          padding-top: 10px;
+        }
+        .detail {
+          width: 75%;
+        }
+        .logo__mobile {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        /* .body__content {
+          position: absolute;
+          bottom: 10px;
+          padding: 0;
+        } */
+        .logo__icon {
+          display: none;
+        }
+        .detail {
+          width: 100%;
+        }
+        .logo img {
+          width: 50px;
+        }
+        .body__content {
+          padding-top: 220px;
+        }
+      .social__in {
+        margin: 0 2%;
+      }
+      }
+      .navbar-toggler {
+        width: 50px;
+        height: 35px;
+        background-color: #425060;
+      }
+      .navbar-toggler .line {
+        width: 100%;
+        height: 2px;
+        float: left;
+        background-color: #eee9e4;
+        margin-bottom: 5px;
+      }
+
+      .fa {
+        padding: 7px;
+        font-size: 15px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+      }
+      .fa:hover {
+        opacity: 0.7;
+      }
+      .fa-facebook {
+        border: 2px solid #425060;
+        color: #425060;
+      }
+
+      .fa-twitter {
+        border: 2px solid #425060;
+        color: #425060;
+      }
+      .fa-instagram {
+        border: 2px solid #425060;
+        color: #425060;
+      }
+      .site__name {
+        text-decoration: none;
+        color: #e2e1dd;
+      }
+      .site__name:hover {
+        text-decoration: none;
+        color: #e2e1dd;
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-expand-lg fixed-top mt-md-4 mx-md-5">
+      <a class="navbar-brand logo" href="#">
+        <img class="logo__icon" src="./img/logo.png" alt="logo" />
+        <img class="logo__mobile" src="./img/mobile_logo.png" alt="logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsibleNavbar"
+      >
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse toggle justify-content-end"
+        id="collapsibleNavbar"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item mx-lg-5">
+            <a class="nav-link" href="#section1">Home</a>
+          </li>
+          <li class="nav-item mx-lg-5">
+            <a class="nav-link" href="#section2">About</a>
+          </li>
+          <li class="nav-item mx-lg-5">
+            <a class="nav-link" href="#section3">Deliver</a>
+          </li>
+          <li class="nav-item mx-lg-5">
+            <a class="nav-link" href="#section4">Eat</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div id="section1" class="body__content text__color">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm -2 col-lg-1"></div>
+            <div class="col-12 col-sm-8 col-lg-7">
+              <div class="title">
+                <span class="title__one d-block">Enjoy your food</span>
+                <span class="title__two">everywhere</span>
+              </div>
+              <div class="detail mt-2">
+                <div class="detail__one">
+                  <label>Lorem ipsum dolor sit amet,</label>
+                  <label>consectetur adipisicing elit,</label>
+                  <label>sed do eiusmod tempor incididunt,</label>
+                </div>
+                <div class="detail__two mt-3">
+                  <label>Lorem ipsum dolor sit amet,</label>
+                  <label>consectetur adipisicing elit,</label>
+                </div>
+              </div>
+              <button class="px-3 btn__style mt-4">Order Now!</button>
+            </div>
+            <div class="col-sm-2 col-lg-4"></div>
+          </div>
+          <div class="social__icons mt-5">
+            <a href=""><i class="fa fa-facebook"></i> //your name</a>
+            <a href="" class="social__in"><i class="fa fa-instagram"></i> @your name</a>
+            <a href=""><i class="fa fa-twitter"></i> @your name</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="section2" class="body__content text__color">
+        <div class="container">
+          <div class="row">
+            <div class="col-5 col-md-5">
+              <img src="./img/chef_2.png" width="100%" alt="" />
+            </div>
+            <div class="col-1 col-lg-2"></div>
+            <div class="col-6 col-lg-5 text-right">
+              <div class="title">SOFT OPENING</div>
+              <p class="detail2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna.
+              </p>
+              <div class="social-icons mt-4">
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="section3" class="body__content text__color">
+        <div class="container">
+          <div class="row">
+            <div class="col-7 col-md-7">
+              <div class="title">WESTERN RESTAURANT</div>
+              <p class="detail">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna.
+              </p>
+              <div class="social-icons mt-4">
+                <a href=""><i class="fa fa-instagram"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+              </div>
+              <p class="mt-2">
+                <a class="site__name" href="">www.yoursite.com</a>
+              </p>
+            </div>
+            <div class="col-5 col-lg-5">
+              <img src="./img/chef_3.png" width="100%" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="section4"></div>
+    </div>
+  </body>
+  <script>
+    $(document).ready(function () {
+      $(".nav-item").click(function () {
+        $(".toggle").addClass("collapsed");
+        $(".toggle").removeClass("show");
+        $(".navbar-toggler").addClass("collapsed");
+      });
+    });
+  </script>
 </html>
