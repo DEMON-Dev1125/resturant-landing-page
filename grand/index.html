@@ -17,7 +17,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link
       rel="stylesheet"
-      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <style>
       html {
@@ -74,6 +74,14 @@
         outline-style: none;
         font-size: 16px;
       }
+      .btn__style a {
+        text-decoration: none;
+        color: #1e1711;
+      }
+      .btn__style:hover {
+        text-decoration: none;
+        color: #1e1711;
+      }
       .body__content {
         padding: 150px 0;
       }
@@ -108,6 +116,9 @@
         .logo img {
           width: 50px;
         }
+        .footer__social {
+          text-align: center;
+        }
       }
 
       @media screen and (min-width: 769px) {
@@ -131,6 +142,16 @@
         .logo img {
           width: 50px;
         }
+        .footer__logo img {
+          width: 100%;
+        }
+        .footer__content .footer__link li {
+          display: block;
+          text-align: left;
+        }
+        .footer__social {
+          text-align: center;
+        }
       }
       .navbar-toggler {
         width: 50px;
@@ -143,6 +164,59 @@
         height: 2px;
         background-color: #eee9e4;
         margin-bottom: 5px;
+      }
+      .fa {
+        padding: 8px;
+        font-size: 15px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+      }
+      .fa:hover {
+        opacity: 0.7;
+      }
+      .fa-facebook {
+        color: #faf4f1;
+      }
+      .fa-twitter {
+        color: #faf4f1;
+      }
+      .fa-instagram {
+        color: #faf4f1;
+      }
+
+      hr {
+        background-color: #fdf8f6;
+      }
+
+      .footer {
+        padding: 100px;
+        background-color:#1e1711;
+      }
+      .footer__content ul li {
+        display: inline;
+      }
+      .footer__content ul li a {
+        font-size: 14px;
+        text-decoration: none;
+        color: #f9eae5;
+      }
+      .footer__content ul li a:focus {
+        text-decoration: none;
+        color: #f9eae5;
+      }
+      .footer__down {
+        color: #f9eae5;
+        font-size: 14px;
+      }
+      .footer__logo img {
+        width: 65%;
+      }
+      .footer__social {
+        text-align: right;
       }
     </style>
   </head>
@@ -190,7 +264,7 @@
             viverratesque habitant morbi tristique senectus et netus et
             malesuada fames ac turpis egestas
           </p>
-          <button class="btn__style">Read More</button>
+          <button class="px-3 btn__style"><a href="https://postipasti.it/merchantsignup">Read More</a></button>
         </div>
       </div>
     </div>
@@ -205,7 +279,7 @@
             viverratesque habitant morbi tristique senectus et netus et
             malesuada fames ac turpis egestas
           </p>
-          <button class="btn__style">Read More</button>
+          <button class="px-3 btn__style"><a href="https://postipasti.it/merchantsignup">Read More</a></button>
         </div>
       </div>
     </div>
@@ -220,7 +294,7 @@
             viverratesque habitant morbi tristique senectus et netus et
             malesuada fames ac turpis egestas
           </p>
-          <button class="btn__style">Read More</button>
+          <button class="px-3 btn__style"><a href="https://postipasti.it/merchantsignup">Read More</a></button>
         </div>
       </div>
     </div>
@@ -235,8 +309,41 @@
             viverratesque habitant morbi tristique senectus et netus et
             malesuada fames ac turpis egestas
           </p>
-          <button class="btn__style">Read More</button>
+          <button class="px-3 btn__style"><a href="https://postipasti.it/merchantsignup">Read More</a></button>
         </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__up container">
+        <div class="row">
+          <div class="col-4 col-md-2 footer__logo">
+            <img src="./footer_logo.png" alt="" />
+          </div>
+          <div class="col-8 col-md-7 footer__content">
+            <ul class="footer__link text-center">
+              <li class="pr-3">
+                <a href="">Why us?</a>
+              </li>
+              <li class="pr-3">
+                <a href="">Ecommerce-per-food</a>
+              </li>
+              <li class="pr-3">
+                <a href="">Resturnat guid</a>
+              </li>
+              <li>
+                <a href="">Privacy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3 footer__social">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+      <hr/>
+      <div class="footer__down container text-center">
+        PostiPast - Copyright © 2020
       </div>
     </div>
   </body>

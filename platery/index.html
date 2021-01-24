@@ -86,8 +86,13 @@
         outline-style: none;
         font-size: 20px;
       }
-      .btn__style:focus {
-        outline-style: none;
+      .btn__style a {
+        text-decoration: none;
+        color: #0b0701;
+      }
+      .btn__style:hover {
+        text-decoration: none;
+        color: #0b0701;
       }
       .body__content {
         padding-top: 200px;
@@ -103,11 +108,11 @@
         margin-left: 10px;
       }
       @media screen and (min-width: 992px) {
-        ul li a:hover {
+        .navbar-nav .nav-item a:hover {
           background-color: #dead74;
           border-radius: 10px;
         }
-        ul li a:focus {
+        .navbar-nav .nav-item a:focus {
           background-color: #dead74;
           color: black !important;
           border-radius: 10px;
@@ -138,6 +143,9 @@
         }
         .logo img {
           width: 50px;
+        }
+        .footer__social {
+          text-align: center;
         }
       }
       @media screen and (min-width: 769px) {
@@ -172,6 +180,17 @@
         }
         .logo img {
           width: 50px;
+        }
+
+        .footer__logo img {
+          width: 100%;
+        }
+        .footer__content .footer__link li {
+          display: block;
+          text-align: left;
+        }
+        .footer__social {
+          text-align: center;
         }
       }
       .navbar-toggler {
@@ -221,6 +240,37 @@
         text-decoration: none;
         color: #e2e1dd;
       }
+
+      hr {
+        background-color: #fdf8f6;
+      }
+
+      .footer {
+        padding: 100px;
+        background-color: #121110;
+      }
+      .footer__content ul li {
+        display: inline;
+      }
+      .footer__content ul li a {
+        font-size: 14px;
+        text-decoration: none;
+        color: #f9eae5;
+      }
+      .footer__content ul li a:focus {
+        text-decoration: none;
+        color: #f9eae5;
+      }
+      .footer__down {
+        color: #f9eae5;
+        font-size: 14px;
+      }
+      .footer__logo img {
+        width: 65%;
+      }
+      .footer__social {
+        text-align: right;
+      }
     </style>
   </head>
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -254,7 +304,7 @@
             <a class="nav-link" href="#section3">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#section4">CONTACT</a>
+            <a class="nav-link" href="#section1">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -269,7 +319,7 @@
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna.
             </p>
-            <button class="px-3 btn__style">BOOK NOW!</button>
+            <button class="px-3 btn__style"><a href="https://postipasti.it/merchantsignup">BOOK NOW!</a></button>
             <div class="social-icons mt-4">
               <a href=""><i class="fa fa-instagram"></i></a>
               <a href=""><i class="fa fa-facebook"></i></a>
@@ -328,7 +378,39 @@
         </div>
       </div>
     </div>
-    <div id="section4"></div>
+    </div>
+    <div class="footer">
+      <div class="footer__up container">
+        <div class="row">
+          <div class="col-4 col-md-2 footer__logo">
+            <img src="./img/footer_logo.png" alt="" />
+          </div>
+          <div class="col-8 col-md-7 footer__content">
+            <ul class="footer__link text-center">
+              <li class="pr-3">
+                <a href="">Why us?</a>
+              </li>
+              <li class="pr-3">
+                <a href="">Ecommerce-per-food</a>
+              </li>
+              <li class="pr-3">
+                <a href="">Resturnat guid</a>
+              </li>
+              <li>
+                <a href="">Privacy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3 footer__social">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+      <hr/>
+      <div class="footer__down container text-center">
+        PostiPast - Copyright © 2020
+      </div>
     </div>
   </body>
   <script>

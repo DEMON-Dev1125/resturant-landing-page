@@ -82,8 +82,13 @@
         margin-left: 20%;
         padding-bottom: 8px;
       }
-      .btn__style:focus {
-        outline-style: none;
+      .btn__style a {
+        text-decoration: none;
+        color: #425060;
+      }
+      .btn__style:hover {
+        text-decoration: none;
+        color: #425060;
       }
       .body__content {
         padding-top: 150px;
@@ -110,11 +115,11 @@
         margin: 0 12%;
       }
       @media screen and (min-width: 992px) {
-        ul li a:hover {
+        .navbar-nav .nav-item a:hover {
           background-color: #ffd24e;
           border-radius: 10px;
         }
-        ul li a:focus {
+        .navbar-nav .nav-item a:focus {
           background-color: #ffd24e;
           color: black !important;
           border-radius: 10px;
@@ -185,6 +190,16 @@
         .social__in {
           margin: 0 2%;
         }
+        .footer__logo img {
+          width: 100%;
+        }
+        .footer__content .footer__link li {
+          display: block;
+          text-align: left;
+        }
+        .footer__social {
+          text-align: center;
+        }
       }
       .navbar-toggler {
         width: 50px;
@@ -232,6 +247,36 @@
       .site__name:hover {
         text-decoration: none;
         color: #e2e1dd;
+      }
+      hr {
+        background-color: #425060;
+      }
+
+      .footer {
+        padding: 100px;
+        /* background-color: #94a6b2; */
+      }
+      .footer__content ul li {
+        display: inline;
+      }
+      .footer__content ul li a {
+        font-size: 14px;
+        text-decoration: none;
+        color: #425060;
+      }
+      .footer__content ul li a:focus {
+        text-decoration: none;
+        color: #425060;
+      }
+      .footer__down {
+        color: #425060;
+        font-size: 14px;
+      }
+      .footer__logo img {
+        width: 65%;
+      }
+      .footer__social {
+        text-align: right;
       }
     </style>
   </head>
@@ -292,7 +337,7 @@
                   <label>consectetur adipisicing elit,</label>
                 </div>
               </div>
-              <button class="px-3 btn__style mt-4">Order Now!</button>
+              <button class="px-3 btn__style mt-4"><a href="https://postipasti.it/merchantsignup">Order Now!</a></button>
             </div>
             <div class="col-sm-2 col-lg-4"></div>
           </div>
@@ -327,7 +372,7 @@
                   <label>consectetur adipisicing elit,</label>
                 </div>
               </div>
-              <button class="px-3 btn__style mt-4">Order Now!</button>
+              <button class="px-3 btn__style mt-4"><a href="https://postipasti.it/merchantsignup">Order Now!</a></button>
             </div>
             <div class="col-sm-2 col-lg-4"></div>
           </div>
@@ -362,7 +407,7 @@
                   <label>consectetur adipisicing elit,</label>
                 </div>
               </div>
-              <button class="px-3 btn__style mt-4">Order Now!</button>
+              <button class="px-3 btn__style mt-4"><a href="https://postipasti.it/merchantsignup">Order Now!</a></button>
             </div>
             <div class="col-sm-2 col-lg-4"></div>
           </div>
@@ -377,7 +422,7 @@
       </div>
     </div>
     <div class="container-fluid">
-      <div id="section4">
+      <div id="section4" class="body__content text__color">
         <div class="container">
           <div class="row">
             <div class="col-sm -2 col-lg-1"></div>
@@ -397,7 +442,7 @@
                   <label>consectetur adipisicing elit,</label>
                 </div>
               </div>
-              <button class="px-3 btn__style mt-4">Order Now!</button>
+              <button class="px-3 btn__style mt-4"><a href="https://postipasti.it/merchantsignup">Order Now!</a></button>
             </div>
             <div class="col-sm-2 col-lg-4"></div>
           </div>
@@ -409,6 +454,39 @@
             <a href=""><i class="fa fa-twitter"></i> @your name</a>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__up container">
+        <div class="row">
+          <div class="col-4 col-md-2 footer__logo">
+            <img src="./img/footer_logo.png" alt="" />
+          </div>
+          <div class="col-8 col-md-7 footer__content">
+            <ul class="footer__link text-center">
+              <li class="pr-3">
+                <a href="">Why us?</a>
+              </li>
+              <li class="pr-3">
+                <a href="">Ecommerce-per-food</a>
+              </li>
+              <li class="pr-3">
+                <a href="">Resturnat guid</a>
+              </li>
+              <li>
+                <a href="">Privacy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3 footer__social">
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+      <hr/>
+      <div class="footer__down container text-center">
+        PostiPast - Copyright © 2020
       </div>
     </div>
   </body>
