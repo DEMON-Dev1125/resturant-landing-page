@@ -171,16 +171,57 @@
           text-decoration: none;
           color: #e4e4e4;
         }
-
-        .footer__logo img {
-          width: 100%;
-        }
         .footer__content .footer__link li {
           display: block;
           text-align: left;
         }
         .footer__social {
           text-align: center;
+        }
+        .footer__logo img {
+          width: 35%;
+          margin-bottom: 10px;
+        }
+        .footer__content .footer__link li {
+          display: grid;
+          text-align: center;
+          padding: 0 !important;
+        }
+        .footer__content .footer__link {
+          padding: 0 !important;
+        }
+        .footer__social {
+          text-align: center;
+        }
+        .text__detail {
+          margin: 0 !important;
+          line-height: 22px;
+        }
+        .btn__area {
+          margin: 5px 0 0 0 !important;
+        }
+      }
+      @media screen and (min-width: 500px) {
+        .footer__logo img {
+          width: 35%;
+        }
+        .footer__social {
+          text-align: center;
+        }
+      }
+      @media screen and (max-width: 488px) {
+        .footer__logo img {
+          width: 35%;
+        }
+        .footer__link {
+          font-size: 12px;
+          padding: 0 !important;
+        }
+        .footer__down {
+          font-size: 12px;
+        }
+        .detail {
+          font-size: 16px;
         }
       }
       .navbar-toggler {
@@ -242,29 +283,6 @@
       .footer__down {
         color: #f9eae5;
         font-size: 14px;
-      }
-      @media screen and (min-width: 500px) {
-        .footer__logo img {
-          width: 65%;
-        }
-        .footer__social {
-          text-align: right;
-        }
-      }
-      @media screen and (max-width: 488px) {
-        .footer__logo img {
-          width: 200%;
-        }
-        .footer__link {
-          font-size: 12px;
-          padding: 0 !important;
-        }
-        .footer__down {
-          font-size: 12px;
-        }
-        .detail {
-          font-size: 16px;
-        }
       }
     </style>
   </head>
@@ -373,10 +391,10 @@
     <div class="footer">
       <div class="footer__up container">
         <div class="row">
-          <div class="col-4 col-md-2 footer__logo">
+          <div class="col-12 col-sm-2 footer__logo text-center">
             <img src="./footer_logo.png" alt="" />
           </div>
-          <div class="col-8 col-md-7 footer__content">
+          <div class="col-12 col-sm-7 footer__content">
             <ul class="footer__link text-center">
               <li class="pr-3">
                 <a href="">Why us?</a>
@@ -392,7 +410,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-12 col-md-3 footer__social">
+          <div class="col-12 col-sm-3 footer__social">
             <a href=""><i class="fa fa-facebook"></i></a>
             <a href=""><i class="fa fa-twitter"></i></a>
             <a href=""><i class="fa fa-instagram"></i></a>
