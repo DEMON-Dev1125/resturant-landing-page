@@ -1,0 +1,298 @@
+/* start section one style */
+.content__section__one {
+  margin-top: 40px;
+}
+.section__one__title {
+  font-family: "Reey";
+  font-size: 4vw;
+}
+.section__one__detail {
+  font-family: "Open Sans";
+  font-size: 27px;
+  color: #2f3135;
+  margin-top: 50px;
+  width: 70%;
+}
+.cook__title {
+  font-family: "Open Sans";
+  font-size: 29px;
+}
+.cook__detail {
+  font-family: "Open Sans";
+  font-size: 23px;
+}
+.show__link__btn {
+  font-family: "Open Sans";
+  background-color: #343434;
+  border-radius: 25px;
+  font-size: 23px;
+  padding: 5px 40px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.show__link__btn:focus {
+  outline-style: none;
+}
+.cook__photo img {
+  width: 100%;
+}
+
+/* start section two style */
+.content__section__two {
+  background-color: #27292c;
+}
+.section__two__title {
+  font-family: "Reey";
+  font-size: 4vw;
+}
+.section__two__detail {
+  font-family: "Montserrat";
+  font-size: 16px;
+}
+.info__link__btn {
+  font-family: "Montserrat";
+  background-color: #e9e9e9;
+  border-radius: 15px;
+  font-size: 26px;
+  padding: 5px 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.info__link__btn:focus {
+  outline-style: none;
+}
+.three__cook__title {
+  font-family: "Open Sans";
+  font-size: 58px;
+  color: #27292c;
+}
+.three__cook_detail {
+  font-family: "Open Sans";
+  font-size: 29px;
+  color: #27292c;
+}
+.three__link__btn {
+  font-family: "Open Sans";
+  background-color: #343434;
+  border-radius: 25px;
+  font-size: 23px;
+  padding: 5px 40px;
+  margin-top: 15px;
+}
+/* start section three style */
+
+/* start section four style */
+.content__four__section {
+  background-image: url(../img/pizza.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 155vh;
+  background-position: top;
+  background-position-y: 10px;
+}
+.four__section__title {
+  font-family: "Reey";
+  font-size: 4vw;
+  color: #f8f6f1;
+  padding-top: 250px;
+}
+.four__section__detail {
+  font-family: "Montserrat";
+  font-size: 25px;
+  color: #f8f6f1;
+  width: 65%;
+  margin-top: 50px;
+}
+.line {
+  background-color: white;
+  height: 5px;
+  width: 150px;
+}
+
+/* start section five style */
+.content__five__section {
+  margin-bottom: 100px;
+}
+.five__title {
+  font-family: "Reey";
+  font-size: 35px;
+  color: #393939;
+}
+.five__detail {
+  font-family: "Open Sans";
+  font-size: 18px;
+  color: #333d42;
+}
+.content__detail {
+  font-family: "Open Sans";
+  color: #3f3f3f;
+  font-size: 25px;
+  margin-top: 100px;
+  width: 75%;
+}
+.content__word {
+  font-family: "Open Sans";
+  font-size: 20px;
+  color: #3f3f3f;
+  margin-top: 50px;
+}
+
+/* start contect six style */
+.content__section__six {
+  background-color: #27292c;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.up__leaf {
+  position: relative;
+}
+.up__leaf img {
+  position: absolute;
+  right: 10px;
+  top: -190px;
+}
+.down__leaf {
+  position: relative;
+}
+.down__leaf {
+  position: absolute;
+}
+.content__six__title {
+  font-family: "Open Sans";
+  font-size: 5vw;
+}
+.content__six__detail {
+  font-family: "Open Sans";
+  font-size: 29px;
+  width: 80%;
+}
+.input-group .form-control {
+  border-radius: 50px !important;
+  height: 55px;
+  width: 400px;
+}
+.input-group-append {
+  position: absolute;
+  right: 0;
+}
+.input-group-text {
+  border-radius: 50px !important;
+  background-color: #54524f;
+  padding: 15px 30px;
+  z-index: 200;
+}
+@media screen and (min-width: 375px) {
+  .mobile__show {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section__one__detail {
+    font-size: 18px;
+    width: 100%;
+  }
+  .three__cook__title {
+    font-size: 30px;
+  }
+  .four__section__detail {
+    font-size: 18px;
+    width: 100%;
+  }
+  .five__title {
+    text-align: center;
+  }
+  .up__leaf img {
+    width: 30%;
+  }
+  .down__leaf img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .mobile__hide {
+    display: none;
+  }
+  .section__one__title {
+    font-size: 20px;
+  }
+  .section__one__detail {
+    font-size: 15px;
+  }
+  .cook__title {
+    font-size: 20px;
+    text-align: center;
+  }
+  .cook__detail {
+    font-size: 16px;
+    text-align: center;
+  }
+  .show__link__btn {
+    font-size: 16px;
+  }
+  .section__two__title {
+    font-size: 28px;
+  }
+  .section__two__detail {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .info__link__btn {
+    font-size: 16px;
+  }
+  .three__cook__title {
+    font-size: 16px;
+  }
+  .three__cook__detail {
+    font-size: 12px;
+  }
+  .three__link__btn {
+    font-size: 14px;
+  }
+  .four__section__title {
+    font-size: 18px;
+    padding-top: 150px;
+  }
+  .four__section__detail {
+    font-size: 14px;
+  }
+  .five__row__content {
+    margin-top: 20px;
+  }
+  .five__detail {
+    font-size: 16px;
+  }
+  .content__six__submit {
+    width: 100% !important;
+  }
+  .content__section_six {
+    padding-bottom: 70px;
+  }
+  .form-control {
+    height: 45px !important;
+  }
+  .input-group-text {
+    height: 45px;
+  }
+  .up__leaf img {
+    width: 30%;
+  }
+  .down__leaf img {
+    width: 40%;
+  }
+  .content__detail {
+    font-size: 16px;
+    width: 100%;
+  }
+  .content__six__title {
+    font-size: 30px;
+  }
+  .content__six__detail {
+    font-size: 15px;
+    width: 100%;
+  }
+  .content__section__six {
+    padding-bottom: 80px;
+  }
+}
