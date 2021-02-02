@@ -181,7 +181,7 @@
   padding: 15px 30px;
   z-index: 200;
 }
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 376px) {
   .mobile__show {
     display: none;
   }
