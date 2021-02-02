@@ -1,0 +1,271 @@
+/* start content section one */
+.section__one__title {
+  font-family: "Grand Hotel";
+  font-size: 4vw;
+  color: #333333;
+}
+.section__one__detail {
+  font-family: "Montserrat";
+  margin: 20px 0 40px 0;
+  font-size: 25px;
+  color: #333333;
+}
+.cook__photo img {
+  width: 100%;
+}
+.cook__title {
+  font-family: "Grand Hotel";
+  text-align: center;
+  color: #333333;
+  font-size: 40px;
+}
+.cook__detail {
+  font-family: "Montserrat";
+  text-align: center;
+  color: #333333;
+  font-size: 16px;
+  width: 80%;
+}
+
+/* start content section two style */
+.content__section__two {
+  background-image: url(../img/middle1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+}
+.content__two__detail {
+  padding-top: 60px;
+}
+.section__two__title {
+  font-family: "Grand Hotel";
+  color: #ffc200;
+  font-size: 5vw;
+}
+.section__two__detail {
+  font-family: "Montserrat";
+  font-size: 25px;
+}
+.section__two__photo img {
+  width: 80%;
+}
+.middle__link__btn {
+  background-color: #ffc200;
+  font-family: "Open Sans";
+  padding: 10px 50px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 3rem;
+  font-weight: bold;
+  color: #333333;
+  border: none;
+}
+
+/* start content section three style */
+.content__section__three {
+  background-image: url(../img/middle2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  margin-top: -1px;
+  height: 110vh;
+}
+.section__three__title {
+  font-family: "Grand Hotel";
+  color: #ffc200;
+  font-size: 5vw;
+}
+.section__three__detail {
+  font-family: "Montserrat";
+  text-align: center;
+  color: #333333;
+  font-size: 25px;
+  color: #fff;
+  width: 80%;
+}
+.circles {
+  margin-top: 100px;
+}
+.circle__num {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  padding: 65px;
+}
+.number {
+  font-family: "Montserrat";
+  color: #ffc200;
+  font-size: 50px;
+}
+.title {
+  font-family: "Montserrat";
+  font-size: 28px;
+}
+/* start content section four style */
+.content__section__four {
+  background-image: url(../img/middle3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -1px;
+  height: 61vh;
+}
+/* start content section five style */
+.content__section__five {
+  background-image: url(../img/yellow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 300px;
+  height: 100vh;
+}
+.section__five__detail {
+  font-family: "Montserrat";
+  color: #333333;
+  font-size: 40px;
+  width: 80%;
+}
+.section__five__title {
+  font-family: "Grand Hotel";
+  color: #333333;
+  font-size: 5vw;
+}
+/* start content section six style */
+.content__section__six {
+  background-image: url(../img/vegetable.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 300px;
+  height: 100vh;
+}
+.section__six__title {
+  font-family: "Grand Hotel";
+  color: #333333;
+  font-size: 5vw;
+}
+.section__six__detail {
+  font-family: "Montserrat";
+  color: #333333;
+  font-size: 29px;
+  width: 80%;
+}
+.form-control {
+  font-size: 20px;
+  height: 60px;
+}
+.input-group-text {
+  background-color: #ffc200;
+  font-size: 20px;
+  padding: 0 30px;
+  height: 60px;
+}
+.content__six__submit {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .circle__num {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .header__title {
+    font-size: 65px;
+  }
+  .header__detail {
+    margin-top: 0;
+    font-size: 20px;
+  }
+  .header__link__btn {
+    font-size: 14px;
+  }
+  .section__one__title {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+  .section__one__detail {
+    font-size: 16px;
+  }
+  .cook__photo {
+    text-align: center;
+  }
+  .cook__photo img {
+    width: 65%;
+  }
+  .content__section__two {
+    padding-top: 50px;
+  }
+  .section__two__photo {
+    text-align: center;
+  }
+  .section__two__title {
+    font-size: 35px;
+    text-align: center;
+  }
+  .section__two__detail {
+    font-size: 14px;
+  }
+  .middle__link__btn {
+    font-size: 14px;
+    margin-top: 1rem;
+  }
+  .content__section__three {
+    padding-top: 50px;
+  }
+  .section__three__title {
+    font-size: 50px;
+  }
+  .section__three__detail {
+    font-size: 14px;
+    width: 100%;
+  }
+  .circle__num {
+    width: 90%;
+    padding: 30px;
+  }
+  .number {
+    font-size: 28px;
+  }
+  .title {
+    font-size: 16px;
+  }
+  .content__two__detail {
+    padding-top: 0px;
+  }
+  .content__section__four {
+    height: 80vh;
+  }
+  .section__five__detail {
+    font-size: 14px;
+    width: 100%;
+  }
+  .section__five__title {
+    font-size: 40px;
+  }
+  .content__section__six {
+    padding-top: 200px;
+  }
+  .section__six__title {
+    font-size: 50px;
+  }
+  .section__six__detail {
+    font-size: 14px;
+    width: 100%;
+  }
+  .content__six__submit {
+    width: 100%;
+  }
+  .form-control {
+    font-size: 16px;
+    height: 50px;
+  }
+  .input-group-text {
+    background-color: #ffc200;
+    font-size: 16px;
+    padding: 0 10px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .circle__num {
+    padding: 18px;
+  }
+}
