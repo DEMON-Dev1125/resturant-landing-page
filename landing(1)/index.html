@@ -29,7 +29,10 @@
   <body>
     <!-- start header section -->
     <div class="header__section">
-      <nav class="navbar navbar-expand-lg fixed-top pt-5 justify-content-end">
+      <nav
+        id="navbar"
+        class="navbar navbar-expand-lg fixed-top pt-lg-5 justify-content-end"
+      >
         <a class="navbar-brand logo" href="#"></a>
         <button
           class="navbar-toggler"
@@ -62,10 +65,12 @@
               <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">+393490989787</a>
+              <a class="nav-link" href="#">
+                <i class="fa fa-whatsapp whatsapp-icon"></i>
+                +393490989787
+              </a>
             </li>
           </ul>
-          <!-- <input class="search" type="search" /> -->
         </div>
       </nav>
       <div class="container">
@@ -249,8 +254,9 @@
             <div class="input-group-append">
               <span
                 class="input-group-text text-uppercase text-white font-weight-bold"
-                >subscibe</span
               >
+                subscibe
+              </span>
             </div>
           </div>
         </div>
@@ -300,10 +306,10 @@
               </ul>
             </div>
           </div>
-          <div class="col-6 col-md-2">
+          <div class="col-12 col-md-2">
             <div class="footer__title">Other</div>
             <div class="footer__detail">
-              <ul>
+              <ul class="other">
                 <li>Contact Us</li>
                 <li>Help</li>
                 <li>Privacy</li>
@@ -315,4 +321,12 @@
     </div>
     <!-- end footer section -->
   </body>
+
+  <script>
+    window.onscroll = () => {
+      const nav = document.querySelector('#navbar')
+      if (this.scrollY <= 10) nav.classList.remove('scroll')
+      else nav.classList.add('scroll')
+    }
+  </script>
 </html>

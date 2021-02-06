@@ -66,4 +66,14 @@
   .footer__detail {
     font-size: 16px;
   }
+  .social__icons {
+    text-align: center;
+  }
+  .other {
+    text-align: center;
+  }
+  .other li {
+    display: inline-block;
+    padding: 0 10px;
+  }
 }
