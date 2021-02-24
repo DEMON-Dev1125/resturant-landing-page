@@ -1,0 +1,150 @@
+.first__section {
+  background-image: url(../img/back2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.first__title {
+  font-family: "Grand Hotel";
+  color: #e8565e;
+  font-size: 6vw;
+}
+.first__detail {
+  font-family: "Lato";
+  color: #333333;
+  font-size: 30px;
+}
+.food__title {
+  font-family: "Grand Hotel";
+  color: #e8565e;
+  font-size: 48px;
+}
+.food__detail {
+  font-family: "Lato";
+  font-size: 22px;
+}
+
+.two__section {
+  background-image: url(../img/back3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.two__title {
+  font-family: "Grand Hotel";
+  font-size: 6vw;
+}
+.two__detail {
+  font-family: "Lato";
+  font-size: 30px;
+}
+.intergrate {
+  border: 6px;
+  border-style: dotted;
+  font-family: "Lato";
+  border-radius: 50%;
+  height: 240px;
+  width: 70%;
+}
+.static__num {
+  font-size: 60px;
+}
+.static__title {
+  font-size: 48px;
+}
+.third__section {
+  background-color: #eee6cc;
+  height: 100vh;
+}
+.third__title {
+  font-family: "Grand Hotel";
+  font-size: 6vw;
+  color: #e8565e;
+}
+.third__detail {
+  font-family: "Lato";
+  font-size: 30px;
+}
+.menu__name {
+  font-family: "Grand Hotel";
+  font-size: 45px;
+  color: #e8565e;
+}
+.menu__detail {
+  font-size: 19px;
+}
+
+.four__left {
+  background-image: url(../img/back5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.four__right {
+  background-color: #faf5e4;
+}
+.four__title {
+  font-family: "Grand Hotel";
+  color: #e8565e;
+  font-size: 6vw;
+}
+.four__detail {
+  font-family: "Lato";
+  font-size: 30px;
+  color: #333333;
+}
+.btn-order-full {
+  background-color: #e8565e;
+  border-radius: 50px;
+  padding: 10px 42px;
+  color: #ffffff;
+  font-size: 26px;
+}
+
+.five__title {
+  font-family: "Grand Hotel";
+  font-size: 6vw;
+}
+.five__detail {
+  font-family: "Lato";
+  font-size: 30px;
+  color: #333333;
+}
+.five__section {
+  background-color: #eee6cc;
+}
+.package__card {
+  background-color: #faf5e4;
+}
+.package__title {
+  font-family: "Grand Hotel";
+  font-size: 3vw;
+  color: #e8565e;
+}
+.package__detail {
+  font-family: "Lato";
+  font-size: 20px;
+}
+.btn-price {
+  background-color: #e8565e;
+  font-family: "Lato";
+  border-radius: 50px;
+  padding: 5px 30px;
+  color: #ffffff;
+}
+
+.six__section {
+  background-image: url(../img/back4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.chef__detail {
+  font-family: "Lato";
+  font-size: 40px;
+}
+.chef__title {
+  font-family: "Grand Hotel";
+  font-size: 6vw;
+  color: #e8565e;
+}

@@ -1,0 +1,24 @@
+.header__section {
+  background-image: url(../img/header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.header__describe {
+  padding-top: 200px;
+}
+.header__title {
+  font-family: "Grand Hotel";
+  font-size: 8vw;
+}
+.header__detail {
+  font-family: "Lato";
+  font-size: 30px;
+}
+.btn-order {
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px 42px;
+  color: #e8565e;
+  font-size: 26px;
+}
