@@ -217,6 +217,9 @@
     height: 230px;
     width: 100%;
   }
+  .package__title {
+    font-size: 32px;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -296,6 +299,9 @@
   }
   .input-group-text {
     padding: 11px 15px;
+  }
+  .package__title {
+    font-size: 30px;
   }
 }
 
