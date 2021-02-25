@@ -1,0 +1,152 @@
+.body__section {
+  background-image: linear-gradient(to bottom, #2e271f, #010101);
+  height: auto;
+  padding-top: 95px;
+  padding-bottom: 70px;
+}
+.first_title {
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  color: #b09165;
+}
+.first_sm_title {
+  font-family: "Bungee Inline";
+  font-size: 50px;
+  color: #b09165;
+}
+.first_detail {
+  font-family: "Montserrat";
+  font-size: 17px;
+  color: #b09165;
+}
+.hotdog_title {
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  font-size: 38px;
+  color: #b09165;
+}
+.hotdog_detail {
+  font-family: "Montserrat";
+  font-size: 16px;
+  color: #b09165;
+}
+.btn_order {
+  background-color: #bf2222;
+  font-family: "Bungee Inline";
+  color: #ffffff;
+}
+.btn_order:hover {
+  color: #ffffff;
+}
+.two__section {
+  margin-top: 80px;
+}
+.two_title {
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  color: #b09165;
+}
+.two_sm_title {
+  font-family: "Bungee Inline";
+  font-size: 40px;
+  color: #b09165;
+}
+.two_detail {
+  font-family: "Montserrat";
+  font-size: 18px;
+  color: #b09165;
+}
+.carousel {
+  margin-top: 60px;
+}
+.carousel-inner {
+  width: 50%;
+  margin: 0 auto;
+}
+.las {
+  font-size: 32px;
+  color: #b09165;
+}
+.third__section {
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 150px;
+}
+.third_title {
+  font-family: "Bebas Neue";
+  color: #745f44;
+  font-size: 30px;
+}
+.third_sm_title {
+  font-family: "Bungee Inline";
+  color: #b09165;
+  font-size: 50px;
+}
+.third_form {
+  margin-top: 80px;
+}
+.cake_box {
+  position: absolute;
+  z-index: 100;
+  right: 10%;
+  top: -20%;
+}
+.hotdog {
+  position: absolute;
+  z-index: 100;
+  top: -45%;
+}
+.juice {
+  position: absolute;
+  z-index: 100;
+  right: 1%;
+  top: 40%;
+}
+.form-control {
+  border: 1px solid #b09165;
+  font-family: "Bebas Neue";
+  background-color: black;
+  padding: 35px 15px;
+  color: #b09165;
+  font-size: 20px;
+}
+.form-control:hover {
+  border: 1px solid #b09165;
+  font-family: "Bebas Neue";
+  background-color: black;
+  padding: 35px 15px;
+  color: #b09165;
+  font-size: 20px;
+}
+.btn-book {
+  background-color: #b09165;
+  font-family: "Bungee Inline";
+  padding: 18px 10px;
+  font-size: 24px;
+  color: white;
+}
+.btn-book:hover {
+  background-color: #b09165;
+  font-family: "Bungee Inline";
+  padding: 18px 10px;
+  font-size: 24px;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .cake_box {
+    display: none;
+  }
+  .hotdog {
+    display: none;
+  }
+  .juice {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .carousel-inner {
+    width: 75%;
+  }
+}
