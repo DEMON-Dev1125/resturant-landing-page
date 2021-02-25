@@ -2,7 +2,6 @@
   background-image: url(../img/back2.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
 }
 .first__title {
   font-family: "Grand Hotel";
@@ -13,6 +12,9 @@
   font-family: "Lato";
   color: #333333;
   font-size: 30px;
+}
+.first__foods {
+  padding-bottom: 50px;
 }
 .food__title {
   font-family: "Grand Hotel";
@@ -28,7 +30,7 @@
   background-image: url(../img/back3.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  padding: 50px 0;
 }
 .two__title {
   font-family: "Grand Hotel";
@@ -37,6 +39,9 @@
 .two__detail {
   font-family: "Lato";
   font-size: 30px;
+}
+.two__third {
+  padding-top: 30px;
 }
 .intergrate {
   border: 6px;
@@ -54,7 +59,6 @@
 }
 .third__section {
   background-color: #eee6cc;
-  height: 100vh;
 }
 .third__title {
   font-family: "Grand Hotel";
@@ -64,6 +68,9 @@
 .third__detail {
   font-family: "Lato";
   font-size: 30px;
+}
+.third__footer {
+  padding-bottom: 50px;
 }
 .menu__name {
   font-family: "Grand Hotel";
@@ -75,10 +82,10 @@
 }
 
 .four__left {
-  background-image: url(../img/back5.png);
+  /* background-image: url(../img/back5.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+  background-size: cover; */
+  /* padding-left: 0px; */
 }
 .four__right {
   background-color: #faf5e4;
@@ -92,17 +99,28 @@
   font-family: "Lato";
   font-size: 30px;
   color: #333333;
+  padding-bottom: 25px;
 }
 .btn-order-full {
   background-color: #e8565e;
   border-radius: 50px;
-  padding: 10px 42px;
+  padding: 10px 50px;
   color: #ffffff;
   font-size: 26px;
 }
+.pasta {
+  margin-top: 200px;
+}
+.btn-order-full:hover {
+  color: #ffffff;
+}
 
+.five__section {
+  background-color: #eee6cc;
+}
 .five__title {
   font-family: "Grand Hotel";
+  color: #e8565e;
   font-size: 6vw;
 }
 .five__detail {
@@ -110,11 +128,10 @@
   font-size: 30px;
   color: #333333;
 }
-.five__section {
-  background-color: #eee6cc;
-}
 .package__card {
   background-color: #faf5e4;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .package__title {
   font-family: "Grand Hotel";
@@ -129,7 +146,11 @@
   background-color: #e8565e;
   font-family: "Lato";
   border-radius: 50px;
-  padding: 5px 30px;
+  color: #ffffff;
+  font-size: 25px;
+  width: 100%;
+}
+.btn-price:hover {
   color: #ffffff;
 }
 
@@ -137,7 +158,7 @@
   background-image: url(../img/back4.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  padding: 30px 0;
 }
 .chef__detail {
   font-family: "Lato";
@@ -147,4 +168,149 @@
   font-family: "Grand Hotel";
   font-size: 6vw;
   color: #e8565e;
+}
+
+.seven__section {
+  background-color: #faf5e4;
+}
+
+.sev__title {
+  font-family: "Grand Hotel";
+  font-size: 6vw;
+  color: #e8565e;
+}
+.sev__detail {
+  font-family: "Lato";
+  font-size: 25px;
+  color: #333333;
+  padding-bottom: 30px;
+}
+.sev__sub {
+  padding-bottom: 100px;
+}
+
+.input-group .form-control {
+  border-radius: 50px !important;
+  height: 48px;
+  width: 400px;
+}
+.input-group-append {
+  position: absolute;
+  right: 0;
+}
+.input-group-text {
+  border-radius: 50px !important;
+  background-color: #eb4d55;
+  padding: 11px 40px;
+  z-index: 200;
+}
+
+@media screen and (max-width: 768px) {
+  .pasta {
+    margin-top: 100px;
+  }
+  .intergrate {
+    border: 6px;
+    border-style: dotted;
+    font-family: "Lato";
+    border-radius: 50%;
+    height: 230px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .first__title {
+    font-size: 36px;
+    padding-top: 20px;
+  }
+  .first__detail {
+    font-size: 20px;
+  }
+  .food__title {
+    font-size: 30px;
+  }
+  .food__detail {
+    font-size: 20px;
+  }
+  .two__title {
+    font-size: 36px;
+  }
+  .two__detail {
+    font-size: 20px;
+  }
+  .intergrate {
+    border: 6px;
+    border-style: dotted;
+    font-family: "Lato";
+    border-radius: 50%;
+    height: 230px;
+    width: 68%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .third__title {
+    font-size: 36px;
+  }
+  .third__detail {
+    font-size: 20px;
+  }
+  .menu__image,
+  .menu__name {
+    text-align: center;
+  }
+  .four__title {
+    font-size: 36px;
+    text-align: center;
+  }
+  .four__detail {
+    font-size: 20px;
+  }
+  .btn-order-full {
+    font-size: 16px;
+    width: 100%;
+  }
+  .four__button {
+    margin-bottom: 15px;
+  }
+  .five__title {
+    font-size: 36px;
+  }
+  .five__detail {
+    font-size: 20px;
+  }
+  .chef__avatar img {
+    width: 100px;
+  }
+  .chef__detail {
+    font-size: 20px;
+  }
+  .chef__title {
+    font-size: 36px;
+  }
+  .sev__title {
+    font-size: 36px;
+  }
+  .sev__detail {
+    font-size: 20px;
+  }
+  .input-group-text {
+    padding: 11px 15px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .intergrate {
+    border: 6px;
+    border-style: dotted;
+    font-family: "Lato";
+    border-radius: 50%;
+    height: 230px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .footer__detail {
+    font-size: 16px;
+  }
 }

@@ -29,7 +29,8 @@
     <!-- start herder section -->
     <div class="header__section">
       <div class="container">
-        <nav id="navbar" class="navbar navbar-expand-md fixed-top">
+        <!-- <div class="top_bar fis"></div> -->
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
           <a class="navbar-brand logo" href="#"></a>
           <button
             class="navbar-toggler"
@@ -244,22 +245,28 @@
           </div>
         </div>
       </div>
-      <div class="four__section container-fluid">
-        <div class="row">
-          <div class="col-sm-6 four__left"></div>
-          <div class="col-sm-6 four__right">
-            <div class="container">
-              <div class="four__title">Delicious Pasta</div>
-              <div class="four__detail">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                lacinia odio vitae vestibulum vestibulum.
-              </div>
-              <div class="four__button">
-                <button
-                  class="btn btn-order-full text-uppercase font-weight-bold"
-                >
-                  order now
-                </button>
+      <div class="four__section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6 four__left p-0">
+              <img src="./assets/img/back5.png" width="100%" alt="" />
+            </div>
+            <div class="col-sm-6 four__right">
+              <div class="container">
+                <div class="pasta">
+                  <div class="four__title">Delicious Pasta</div>
+                  <div class="four__detail">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus lacinia odio vitae vestibulum vestibulum.
+                  </div>
+                  <div class="four__button">
+                    <button
+                      class="btn btn-order-full text-uppercase font-weight-bold"
+                    >
+                      order now
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -272,38 +279,38 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
             lacinia odio vitae vestibulum vestibulum.
           </div>
-          <div class="row text-center">
-            <div class="col-sm-4">
-              <div class="package__card">
+          <div class="row text-center py-5">
+            <div class="col-sm-4 mb-3">
+              <div class="package__card container">
                 <div class="package__img">
                   <img src="./assets/img/icon2-1.png" alt="" />
                 </div>
                 <div class="package__title">Pasta + Ice Tea</div>
-                <div class="package__detail w-75 mx-auto">
+                <div class="package__detail py-3">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </div>
                 <button class="btn btn-price">$34.00</button>
               </div>
             </div>
-            <div class="col-sm-4">
-              <div class="package__card">
+            <div class="col-sm-4 mb-3">
+              <div class="package__card container">
                 <div class="package__img">
                   <img src="./assets/img/icon2-2.png" alt="" />
                 </div>
                 <div class="package__title">Carbonara & Pasta</div>
-                <div class="package__detail w-75 mx-auto">
+                <div class="package__detail py-3">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </div>
                 <button class="btn btn-price">$34.00</button>
               </div>
             </div>
-            <div class="col-sm-4">
-              <div class="package__card">
+            <div class="col-sm-4 mb-3">
+              <div class="package__card container">
                 <div class="package__img">
                   <img src="./assets/img/icon2-4.png" alt="" />
                 </div>
                 <div class="package__title">Mie Ayam Pangsit</div>
-                <div class="package__detail w-75 mx-auto">
+                <div class="package__detail py-3">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </div>
                 <button class="btn btn-price">$34.00</button>
@@ -314,37 +321,39 @@
       </div>
       <div class="six__section">
         <div class="container text-center">
-          <div class="chef__avtar">
+          <div class="chef__avatar">
             <img src="./assets/img/woman.png" alt="" />
           </div>
-          <div class="chef__detail w-75 mx-auto font-weight-bold">
+          <div class="chef__detail w-75 mx-auto font-weight-bold py-5">
             Lorem ipsum dolor sit amet, consectetur adip-iscing elit. Vivamus
             lacinia odio vitae vestibu-lum vestibulum.
           </div>
           <div class="chef__title">Chef Renatta</div>
         </div>
       </div>
-      <div class="seven__section container">
-        <div class="sev__title text-center">Subscribe</div>
-        <div class="sev__detail text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          lacinia odio vitae vestibulum vestibulum.
-        </div>
-        <div class="sev__sub">
-          <div class="input-group mb-3">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Your Email"
-              id="mail"
-              name="email"
-            />
-            <div class="input-group-append">
-              <span
-                class="input-group-text text-uppercase text-white font-weight-bold"
-              >
-                subscibe
-              </span>
+      <div class="seven__section">
+        <div class="container">
+          <div class="sev__title text-center">Subscribe</div>
+          <div class="sev__detail text-center w-75 mx-auto">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vi-vamus
+            lacinia odio vitae vestibulum vestibulum.
+          </div>
+          <div class="sev__sub w-75 mx-auto">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your Email"
+                id="mail"
+                name="email"
+              />
+              <div class="input-group-append">
+                <span
+                  class="input-group-text text-uppercase text-white font-weight-bold"
+                >
+                  subscibe
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -353,53 +362,84 @@
     <!-- end body section -->
 
     <!-- start footer section -->
-    <div class="footer__section container">
-      <div class="row">
-        <div class="col-sm-5">
-          <div class="footer__title">About Us</div>
-          <div class="footer__detail">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at
-            dignissim nunc, id maximus ex. Etiam nec dignissim elit, at
-            dignissim enim.
+    <div class="footer__section text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="footer__title">About Us</div>
+            <div class="footer__detail">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at
+              dignissim enim.
+            </div>
           </div>
-        </div>
-        <div class="col-sm-3">
-          <div class="footer_sm_title">About</div>
-          <div class="footer__detail">
-            <ul>
-              <li>History</li>
-              <li>Our Team</li>
-              <li>Brand Guidelines</li>
-              <li>Terms & Condition</li>
-              <li>Privacy Policy</li>
-            </ul>
+          <div class="col-sm-3 col-6">
+            <div class="footer_sm_title">About</div>
+            <div class="footer__detail">
+              <ul>
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Brand Guidelines</li>
+                <li>Terms & Condition</li>
+                <li>Privacy Policy</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-2">
-          <div class="footer_sm_title">Services</div>
-          <div class="footer__detail">
-            <ul>
-              <li>How to Order</li>
-              <li>Our Product</li>
-              <li>Order Status</li>
-              <li>Promo</li>
-              <li>Payment Method</li>
-            </ul>
+          <div class="col-sm-2 col-6">
+            <div class="footer_sm_title">Services</div>
+            <div class="footer__detail">
+              <ul>
+                <li>How to Order</li>
+                <li>Our Product</li>
+                <li>Order Status</li>
+                <li>Promo</li>
+                <li>Payment Method</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-2">
-          <div class="footer_sm_title">Follow</div>
-          <div class="footer__detail">
-            <ul>
-              <li><i class="fa fa-facebook"></i>Facebook</li>
-              <li><i class="fa fa-twitter"></i>Twitter</li>
-              <li><i class="fa fa-instagram"></i>Instagram</li>
-              <li><i class="fa fa-whatsapp"></i>Whatsapp</li>
-            </ul>
+          <div class="col-sm-2 col-12 desktop__follow">
+            <div class="footer_sm_title">Follow</div>
+            <div class="footer__detail">
+              <ul>
+                <li><i class="fa fa-facebook"></i> &nbsp; Facebook</li>
+                <li><i class="fa fa-twitter"></i> &nbsp; Twitter</li>
+                <li><i class="fa fa-instagram"></i> &nbsp; Instagram</li>
+                <li><i class="fa fa-whatsapp"></i> &nbsp; Whatsapp</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2 col-12 mobile__follow">
+            <div class="footer_sm_title text-center">Follow</div>
+            <div class="footer__detail">
+              <div class="contaienr-fluid">
+                <div class="row">
+                  <div class="col-6">
+                    <ul>
+                      <li><i class="fa fa-facebook"></i> &nbsp; Facebook</li>
+                      <li><i class="fa fa-twitter"></i> &nbsp; Twitter</li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul>
+                      <li><i class="fa fa-instagram"></i> &nbsp; Instagram</li>
+                      <li><i class="fa fa-whatsapp"></i> &nbsp; Whatsapp</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <!-- end footer section -->
   </body>
+
+  <script>
+    window.onscroll = () => {
+      const nav = document.querySelector("#navbar");
+      if (this.scrollY <= 10) nav.classList.remove("scroll");
+      else nav.classList.add("scroll");
+    };
+  </script>
 </html>

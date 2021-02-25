@@ -1,0 +1,73 @@
+.footer__section {
+  background-color: #2a2a2a;
+  padding: 100px 0;
+}
+.footer__detail ul {
+  padding-left: 0 !important;
+  list-style: none;
+}
+.footer__title {
+  font-family: "Grand Hotel";
+  font-size: 54px;
+}
+.footer_sm_title {
+  font-family: "Grand Hotel";
+  font-size: 44px;
+}
+.footer__detail {
+  font-family: "Nunito";
+  font-size: 20px;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa-instagram {
+  background: #ffffff;
+  color: #2a2a2a;
+}
+.fa-facebook {
+  background: #ffffff;
+  color: #2a2a2a;
+}
+
+.fa-twitter {
+  background: #ffffff;
+  color: #2a2a2a;
+}
+.fa-whatsapp {
+  background: #ffffff;
+  color: #2a2a2a;
+}
+@media screen and (min-width: 768px) {
+  .mobile__follow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer__title {
+    font-size: 36px;
+    text-align: center;
+  }
+  .footer_sm_title {
+    font-size: 30px;
+  }
+  .footer__detail {
+    font-size: 18px;
+  }
+  .desktop__follow {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .footer__detail {
+    font-size: 16px;
+  }
+}
