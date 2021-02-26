@@ -22,10 +22,10 @@
 .fa {
   padding: 5px;
   font-size: 20px;
-  width: 30px;
+  width: 28px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
+  margin: 5px 0px;
   border-radius: 50%;
 }
 .fa-instagram {
@@ -49,6 +49,9 @@
   .mobile__follow {
     display: none;
   }
+  .desktop__follow {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -63,6 +66,9 @@
     font-size: 18px;
   }
   .desktop__follow {
+    display: none;
+  }
+  .table__follow {
     display: none;
   }
 }
